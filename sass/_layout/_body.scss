@@ -1,0 +1,38 @@
+/*body.scss */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+html {
+    height: 100%;overflow: visible !important;
+	//@include transform(translateZ(0));
+}
+
+body {
+   
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 100%;
+    background-color: #000000;
+   @include sans();
+	width: 100%;
+//@include transform(translateZ(0));
+}
+
+
+@media (min-height: $minheight) and (min-width: $sm) {
+	body {
+		/*hide horz scrollbar*/
+		//overflow-x: hidden;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		 position: absolute;
+		overflow: hidden;
+	}
+	
+}

@@ -1,0 +1,9 @@
+http_path = "/" #root level target path
+css_dir = "." #targets our default style.css file at the root level of our theme
+sass_dir = "sass" #targets our sass directory
+images_dir = "inc/img" #targets our pre existing image directory
+javascripts_dir = "inc/js" #targets our JavaScript directory
+output_style = :compressed
+relative_assets = true
+line_comments = false
+environment = :production

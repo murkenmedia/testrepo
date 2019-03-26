@@ -1,0 +1,988 @@
+.title {	
+	max-width: 475px;
+	width: 100%;height: auto;
+	margin: 0 auto;
+	display: block;	
+}
+
+#timeline-intro {
+	padding-top: 90px;
+}
+
+
+.mobile-400 {
+	padding-bottom: 400px;
+	background-position: center bottom;
+}
+
+.mobile-300 {
+	padding-bottom: 300px;
+	background-position: center bottom;
+		
+}
+
+
+#timeline-final {
+
+	h3 {
+		color: $darkblue;
+		text-align: center;
+		font-size: 32px;
+
+	}
+
+
+	img.nassco-logo {
+		width:100%;
+		height: auto;
+		max-width: 90%;
+		display: block;
+		margin: 10% auto;
+		text-align: center;
+	}
+
+
+}
+
+
+@media (min-height: $minheight) and (min-width: $sm) {
+	
+	/*.checkpoint {
+		position:absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right:auto;
+		width: 100%;
+		background-color: $blue;
+		opacity: 0.3;
+		z-index: 0;
+	}*/
+	
+	
+	#timeline-intro {
+		@include coverBG($attachment:scroll, $position: center right);
+		padding: 0;
+		z-index: 19;
+		
+		width: 115vw;
+		
+		.content-wrap {
+			padding: 0 30px;
+			/*top: 5%;
+			height: 90%;
+			z-index: 2;*/
+			position: relative;
+			margin: 0 auto;
+		}
+		.col-12{
+			max-width: 94vw;
+			padding: 0;
+			text-align: center;
+		}
+		.row {
+			padding: 0px 40px;
+		}
+		.title {	
+			max-width: 775px;
+		}
+			
+		
+		.divider {
+			width: 20vw;
+			right: -10vw;
+		}
+		
+		
+		
+	} 
+
+
+
+
+	#timeline-1900 {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 18;
+		
+		.foreground {
+			right: 50%;
+			top: 0;
+			bottom: 0;
+			left: auto;
+		}
+
+		h2 {
+			color: $text;
+		}
+		h3 {
+			margin-bottom:-15px;
+		}
+		p {
+			color: $text;max-width: 800px;
+		}
+
+		
+		.content-wrap.black-bg {
+			max-width: 350px;
+			margin: 0 auto;
+			bottom:0;
+			right: 0;
+			
+			p {
+				padding: 0;color: #FFF;
+
+			}
+		}
+
+		.thumb-wrap {
+			right: 0;
+			bottom: 0;
+
+			img {
+				max-width: 320px;
+
+				
+				&.tall {
+					max-width: 220px;
+				}
+			}
+		}
+		
+		
+		
+		.divider {
+			width: 20vw;
+			right: -10vw;
+		}
+			
+		.cp-1 {
+			width: 50%;
+		}
+
+		.cp-2 {
+			width: 50%;
+			left:50%;
+		}
+
+	}
+
+	#timeline-1920 {
+		z-index: 0;
+		width: 0;
+		//@include transform(translate3d(-100vw, 0px, 0px));
+		/*width: 10px;
+		float: none;
+		position: absolute;
+		right: 50%;
+		width: 50%;
+		top: 0;*/
+		//@include transform(translate3d(100vw, 0px, 0px));
+		/*@include coverBG($attachment:scroll, $position: bottom right);
+		z-index: 17;
+		
+		.thumb-wrap {
+			right:auto;
+			top: auto;
+			bottom: 8%;
+			left: 0; 
+			
+			
+			img {
+				max-width: 220px;
+			}
+
+		}
+
+		.content-wrap {
+			max-width: 350px;
+			margin: 0 auto;
+			bottom:0;
+		}
+
+		p {
+			padding: 0;
+			
+		}
+		
+		
+		.divider {
+			width: 20vw;
+			right: -10vw;
+		}*/
+
+	}
+
+
+
+	#timeline-1930 {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 16;
+		
+		.foreground {
+			right:auto;
+			top: 0;
+			bottom: 0;
+			left: 5%;
+		}
+		h2 {
+			color: #FFF;
+		}
+		.content-wrap {
+			right:0;
+			bottom:0;
+		}
+		
+		//width:185vw;
+		
+		//padding-right: 30vw;
+		
+		.container-fluid {
+			padding-left: 20vw;
+			padding-right: 30vw;
+		}
+		
+		
+		.divider {
+			right: -40vw;
+			//display: none;
+		}
+		
+		
+	}
+
+
+	#timeline-1940 {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 15;
+		.content-wrap {
+			right: 0;
+		}
+		
+		//width: 135vw;
+		
+		.container-fluid {
+			padding-left: 20vw;
+			padding-right: 40vw;
+		}
+			
+		.divider {
+			right: -40vw;
+			//display: none;
+		}
+		
+		
+		
+		.foreground {
+				left: 95%;
+				top: 0;
+				bottom: 0;
+				right: auto;
+			}
+	}
+
+/*	#timeline-1950-before {
+		@include coverBG($attachment:scroll, $position:center center);
+		z-index: 14;
+		.foreground {
+			left: 30%;
+			top: 0;
+			bottom: 0;
+			right: auto;
+		}
+		
+	}*/
+
+	#timeline-1950 {
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 13;
+		
+		//padding-left: 40vw;
+		
+		//width: 145vw;
+		
+		.container-fluid {
+			padding-left: 20vw;
+			padding-right: 25vw;
+		}
+
+		.thumb-wrap {			
+			img {
+				max-width: 300px;
+			}
+		}
+		
+		
+		.divider {
+			right: -50vw;
+			//display: none;
+		}
+		
+	}
+	
+	#timeline-1960 {
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 12;
+		
+		
+		.container-fluid {
+			padding-left: 25vw;
+			padding-right: 45vw;
+		}
+		
+	
+		.content-wrap {
+			
+			h2 {
+				max-width: 1100px;
+			}
+			
+			p {
+				max-width: 700px;
+			}
+		}
+		.thumb-wrap {
+			img {
+				max-width: 300px;
+			}
+		}	
+		
+		
+		.divider {
+			right: -40vw;
+			//display: none;
+		}
+	}
+	
+	
+	/*#timeline-1970-before {
+		@include coverBG($attachment:scroll, $position: top right);
+		z-index: 11;
+		
+		
+	}*/
+	
+	
+	#timeline-1970 {
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 10;
+		////padding-left: 100px;
+		
+		.container-fluid {
+			padding-left: 20vw;
+			padding-right: 50vw;
+		}
+		
+
+		.content-wrap {
+			
+			p {
+				max-width: 700px;
+			}
+			
+			h2 {
+				max-width: 840px;
+			}
+		}
+		
+		.divider {
+			right: -130vw;
+			//display: none;
+		}
+		
+	}
+	
+	
+	/*#timeline-1970-after {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 9;
+		
+		.content-wrap {
+			bottom: 15%;
+			
+			p {
+				max-width: 600px;color: #FFF;padding-left: 10px;
+			}
+		}
+		
+	}*/
+	
+	
+	#timeline-1980 {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 8;
+		////padding-left: 100px;
+		
+		.container-fluid {
+			padding-left: 110vw;
+			padding-right: 20vw;
+		}
+		
+		.content-wrap {
+			
+			p {
+				max-width: 700px;
+			}
+			
+			h2 {
+				max-width: 1000px;
+			}
+		}
+		
+		.content-wrap.two-column {
+			z-index: 4;	
+			position: relative;
+						
+			p {
+				padding-left: 0;
+			}
+		}
+		.thumb-wrap {
+			
+			img {
+				max-width: 200px;
+			}
+			
+			img.long {
+				max-width: 300px;
+			}
+			
+			&.right-photos {
+				right:0;
+	
+			}
+		}
+		
+		
+		.divider {
+			width: 20vw;
+			right: -10vw;
+		}
+		
+		
+	}
+	
+	
+	#timeline-1990 {
+		@include coverBG($attachment:scroll, $position: center left);
+		z-index: 7;
+		
+		//padding-left: 100px;
+		
+		
+		.container-fluid {
+			padding-left: 30vw;
+			padding-right: 80vw;
+		}
+		
+
+		.content-wrap {
+		
+			p {
+				max-width: 700px;
+				padding: 0;
+			}
+			
+			h2 {
+				max-width: 840px;
+				color: $darkteal;
+			}
+			
+			h3 {
+				color: $darkgold;
+			}
+			
+			
+			&.clinton {
+				top: 15%;
+				max-width: 600px;
+				
+			}
+			
+			&.matson {
+				max-width: 600px;
+				top: 10%;
+			}
+			
+		
+			
+			&.dahl {
+				
+				right: 0;
+				max-width: 600px;				
+			}
+				
+		}
+		
+		.thumb-wrap {
+			img {
+				max-width: 200px;
+			}
+
+			img.long {
+				max-width: 240px;
+			}
+
+		}
+		
+		
+		.divider {
+			right: -50vw;
+			//display: none;
+		}
+		
+	}
+	/*
+	#timeline-2000-before {
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 6;
+
+		width: 83vw;
+		
+
+		
+	}*/
+	
+	
+	#timeline-2000 {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 5;
+		//padding-left: 100px;
+		
+		.container-fluid {
+			padding-left: 20vw;
+			padding-right: 50vw;
+		}
+		
+		
+
+		.content-wrap {
+		
+			p {
+				max-width: 700px;
+			}
+			
+			h2 {
+				max-width: 840px;
+			}
+					
+		}
+		
+		.thumb-wrap {
+			right:0;
+			
+			img {
+				max-width: 180px;
+			}
+
+			img.long {
+				max-width: 240px;
+			}
+
+			img.short {
+				max-width: 120px;
+			}
+
+		}
+		
+		.foreground {
+			right:auto;
+			top: 0;
+			bottom: 0;
+			left: 30%;
+		}
+		
+		
+		
+		.divider {
+			right: -70vw;
+			//display: none;
+		}
+		
+	}
+	
+	
+	#timeline-2000-after {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 4;
+		//padding-left: 100px;
+		
+		
+		.container-fluid {
+			padding-left: 50vw;
+			padding-right: 20vw;
+		}
+
+		.content-wrap {
+			z-index: 4;	
+			top: 10%;
+		
+			
+			p {
+				padding: 0;margin-bottom: 10px;
+			}
+		
+		}
+		
+		.divider {
+			right: -50vw;
+			//display: none;
+		}
+		
+	}
+	
+	#timeline-2010 {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 3;
+		//padding-left: 100px;
+		
+		.container-fluid {
+			padding-left: 20vw;
+			padding-right: 50vw;
+		}
+		
+		.content-wrap {
+			z-index: 4;	
+		
+			p {
+				max-width: 600px;
+				margin-bottom: 25px;
+				padding: 0;
+			}
+			
+			h2 {
+				max-width: 840px;
+			}
+		
+			
+			&.middle-text {
+				top: 10%;
+			}
+			
+			
+		}
+		
+		
+		.divider {
+			right: -40vw;
+			//display: none;
+		}
+		
+	}
+	
+	#timeline-2010-after {
+		
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 2;
+		//padding-left: 100px;
+		
+		
+		.container-fluid {
+			padding-left: 30vw;
+			padding-right: 50vw;
+		}
+		
+		.content-wrap {
+			top: 10%;
+		}
+		
+		p {
+			padding: 0;
+		}
+		
+		.thumb-wrap {
+			img {
+				max-width: 220px;
+			}
+
+			img.long {
+				max-width: 250px;
+			}
+
+		}
+		
+		.divider {
+			right: -50vw;
+			//display: none;
+		}
+	
+	}
+	
+	
+	#timeline-end {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 1;
+		//padding-left: 100px;
+		
+		.container-fluid {
+			padding-left: 30vw;
+			padding-right: 40vw;
+		}
+
+		.content-wrap {
+			
+			p {
+				padding-top: 5%;
+				max-width: 780px;
+			}
+			
+			h3 {
+				color: $darkgold;
+				padding-left:0;
+			}
+			
+			h2 {
+				padding-left: 30px;
+			}
+		}
+		
+		.divider {
+			right: -30vw;
+			//display: none;
+		}
+			
+		
+	}
+	
+	#timeline-end-after {
+		@include coverBG($attachment:scroll, $position: center bottom);
+		z-index: 0;
+		
+		
+		.container-fluid {
+			padding-left: 30vw;
+			
+		}
+		
+		.thumb-wrap {
+			right: 0;
+			bottom: 0;
+
+			img {
+				max-width: 320px;
+
+				
+				&.tall {
+					max-width: 220px;
+				}
+			}
+		}
+		
+	}
+	
+	#timeline-final {
+		@include coverBG($attachment:scroll, $position: center bottom);
+		z-index: 0;
+		
+		
+		width: 100vw;
+		
+		h3 {
+			font-size: 46px;
+			line-height: 52px;
+			padding: 0;
+		}
+		
+		img.nassco-logo {
+			max-width: 70%;
+			
+		}
+		
+	}
+	
+	
+}
+
+
+@media (min-height: $minheight) and (min-width: $sm) {
+
+	.mobile-300, .mobile-400 {
+		padding-bottom: 0;
+	}
+	
+	.slide {
+		width: 105vw;
+	}
+	
+	.slide.horz-sm-150 {
+		width: 150vw;
+	}
+	
+	.slide.horz-sm-200 {
+		width: 200vw;
+	}
+	
+	.slide.horz-sm-250 {
+		width: 250vw;
+	}
+	
+	.slide.horz-sm-300 {
+		width: 300vw;
+	}
+	
+	.slide.horz-sm-350 {
+		width: 350vw;
+	}
+	
+	.slide.horz-sm-400 {
+		width: 400vw;
+	}
+	
+	.slide.horz-sm-450 {
+		width: 450vw;
+	}
+	
+	.parallax {
+		////width: 3263vw;
+		width:3515vw;
+	}
+	
+}
+
+@media (min-height: $minheight) and (min-width: $md) {
+	
+	.parallax {
+		//width: 3233vw;
+		width:  3515vw;
+	}
+	
+	.slide.horz-md-150 {
+		width: 150vw;
+	}
+	
+	.slide.horz-md-200 {
+		width: 200vw;
+	}
+	
+	.slide.horz-md-250 {
+		width: 250vw;
+	}
+	
+	.slide.horz-md-300 {
+		width: 300vw;
+	}
+	
+	.slide.horz-md-350 {
+		width: 350vw;
+	}
+	
+	.slide.horz-md-400 {
+		width: 400vw;
+	}
+	
+	.slide.horz-md-450 {
+		width: 450vw;
+	}
+
+	
+	/*#timeline-1970-before {
+		@include coverBG($attachment:scroll, $position: top right);
+		width: 65vw;
+	}*/
+	
+	
+}
+
+@media (min-height: $minheight) and (min-width: $xl) {
+	
+	.parallax {
+		//width: 3213vw;
+		width: 3315vw;
+	}
+	
+	
+	.slide.horz-xl-150 {
+		width: 150vw;
+	}
+	
+	.slide.horz-xl-200 {
+		width: 200vw;
+	}
+	
+	.slide.horz-xl-250 {
+		width: 250vw;
+	}
+	
+	.slide.horz-xl-300 {
+		width: 300vw;
+	}
+	
+	.slide.horz-xl-350 {
+		width: 350vw;
+	}
+	
+	.slide.horz-xl-400 {
+		width: 400vw;
+	}
+	
+	/*#timeline-1950-before {
+		@include coverBG($attachment:scroll, $position: top right);
+		width: 85vw;
+	}*/
+	
+	
+}
+/*@media (min-height: $minheight) and (min-width: $superxl) {
+	
+	.slide.xl-150 {
+		width: 150vw;
+	}
+	
+	.slide.xl-200 {
+		width: 200vw;
+	}
+	
+	.slide.xl-250 {
+		width: 250vw;
+	}
+	
+	.slide.xl-300 {
+		width: 300vw;
+	}
+	
+	.slide.xl-350 {
+		width: 350vw;
+	}
+	
+	
+		
+	#timeline-1970 {		
+		@include coverBG($attachment:scroll, $position: left top);
+	}
+	
+}*/
+
+@media (max-height: $minheight) and (max-width: $md) {
+	
+	
+	#timeline-final {
+		@include coverBG($attachment:scroll, $position: center top);
+		
+		.content-wrap {
+			background-color: transparent;
+			padding: 0;
+		}
+		
+		h3 {
+			font-size: 36px;
+			line-height: 42px;
+		}
+	}
+
+	
+	
+	
+}
+
+@media (min-height: 800px) and (min-width: $sm) {
+	#timeline-intro {
+		.row {
+			padding: 40px;
+		}
+		.title {	
+			max-width: 875px;
+		}
+		
+	}
+	
+	
+}

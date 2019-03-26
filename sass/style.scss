@@ -1,0 +1,25 @@
+/*!
+Version: 1.1.0
+ 
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+// Here we import our partials
+@import "_partials/typography";
+@import "_includes/normalize";
+@import "_includes/bootstrap-4.scss";
+@import "_partials/mixins";
+@import "_partials/variables";
+//@import "_includes/wordpress-core.scss";
+@import "_elements/loading";
+@import "_layout/body";
+//@import "_layout/header";
+@import "_layout/content";
+@import "_layout/slides";
+@import "_layout/scenes";
+@import "_layout/navigation-desktop";
+@import "_layout/navigation-mobile";
+@import "_elements/magnific";
+@import "_elements/arrows";
+@import "_partials/animation";

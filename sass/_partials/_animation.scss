@@ -1,0 +1,115 @@
+/* animation.scss */
+
+.csstransitions {
+	
+	
+	.slide.lazy-nofade, .slide.lazy-nofade.in-view, .lazy-nofade, img.lazy-desktop, img.lazy {
+		opacity: 0;	@include transition(opacity $longspeed $ease);
+	}
+	
+	
+	.thumb-wrap {
+		img {
+			opacity: 1;	@include transition(opacity $longspeed $ease);
+		}
+		img.lazy {
+			opacity: 0;	@include transition(opacity $longspeed $ease);
+		}
+	}
+	
+	//.lazy-img.lazy {opacity: 0;@include transition(opacity $longspeed $ease);}
+	
+	.slide.in-viewport {
+		.fade-wrap {
+			@include opacity(1);@include transition(opacity $longspeed $ease);
+			@include delay(0.3s);
+		}		
+	}
+		
+	/*.slide.in-viewport.active {
+		.fade-wrap {
+			@include opacity(1);@include transition(opacity $longspeed $ease);
+			//@include delay(0.3s);
+		}
+	}*/
+		
+	//img.lazy {opacity: 1;@include transition(opacity $longspeed $ease);}
+	
+	.fade-in	{
+		@include opacity(0);@include transition(opacity $longspeed $ease);
+	}
+	 
+	.fade-in-fast	{
+		@include opacity(0);@include transition(opacity .2s $ease);
+	}
+
+	.in-view {
+		@include opacity(1);@include transition(opacity $longspeed $ease);
+	}
+	
+	/*.slide {
+		@include opacity(0);@include transition(opacity $longspeed $ease);
+	}*/
+	.in-view, .slide.in-view {
+		@include opacity(1);@include transition(opacity $longspeed $ease);
+	}
+	
+	
+	
+	.move-up {
+		opacity: 0;
+		@include transition(all $longspeed $ease);
+		@include transform(translate3d(0px, 30px, 0px));
+		@include hardware($backface: true, $perspective: 1000);
+	  //-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;backface-visibility: hidden;
+	}
+
+	.move-down {
+	  opacity: 0;
+		@include transition(all $longspeed $ease);
+		@include transform(translate3d(0px, -30px, 0px));
+		@include hardware($backface: true, $perspective: 1000);
+	  //-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;backface-visibility: hidden;
+	}
+
+	.move-left {
+		opacity: 0;
+		@include transition(all $longspeed $ease);
+		@include transform(translate3d(30px, 0px, 0px));
+		@include hardware($backface: true, $perspective: 1000);
+	  //-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;backface-visibility: hidden;
+	}
+
+
+	.move-right {
+		opacity: 0;
+		@include transition(all $longspeed $ease);
+		@include transform(translate3d(-30px, 0px, 0px));
+		@include hardware($backface: true, $perspective: 1000);
+	  //-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;backface-visibility: hidden;
+	}
+
+	.move-up.in-view, .move-down.in-view, .move-up-small.in-view, .move-right.in-view, .move-left.in-view {
+		opacity: 1;
+		@include transition(all $longspeed $ease 0s);
+		@include transform(translate3d(0px, 0px, 0px));
+		@include hardware($backface: true, $perspective: 1000);
+	}
+	
+	.delay.in-view,  { -webkit-transition-delay: $medspeed;-moz-transition-delay: $medspeed;-o-transition-delay: $medspeed;transition-delay: $medspeed;}
+
+	.mediumdelay.in-view { -webkit-transition-delay: 400ms;-moz-transition-delay: 400ms;-o-transition-delay: 400ms;transition-delay: 400ms;}
+
+	.longdelay.in-view { -webkit-transition-delay: 800ms;-moz-transition-delay: 800ms;-o-transition-delay: 800ms;transition-delay: 800ms;}
+	
+	
+	@media (max-width: $sm) {
+		.delay.in-view { -webkit-transition-delay: 0ms;-moz-transition-delay: 0ms;-o-transition-delay: 0ms;transition-delay: 0ms;}		
+		.move-up.in-view, .move-down.in-view, .move-up-small.in-view, .move-right.in-view, .move-left.in-view {
+			opacity: 1;
+			@include transform(translate3d(0px, 0px, 0px));
+		}		
+		
+	}
+	 
+}
