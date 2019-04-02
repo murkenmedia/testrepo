@@ -8,8 +8,10 @@ var $window = jQuery(window),
 	$activeNum,
 	$lazy,
 	$lazynofade,
-	$lazydesktop,
 	$parallax = jQuery('#parallax'),
+	$minheight = 600,
+	$minwidth = 576,
+	$lazydesktop,
 	isIE = /*@cc_on!@*/false || !!document.documentMode;	
 	
 //////////////////0/////////1////////2//////3///////4///////5///////6///////7////////8///////9//////10///////11/////12
@@ -189,7 +191,7 @@ jQuery('.nav-arrow').bind('click',function(event){
 ////////////////////////////LOAD CONTENT
 $window.load(function () {
 	
-	if($window.width() >= 576 && $window.height() >= 600) {		
+	if($window.width() >= $minwidth && $window.height() >= $minheight) {		
 		
 		jQuery('#loading-screen').delay(500).animate({'opacity':0},300,function(){ 
 			jQuery('#loading-screen').css({'display':'none'});
@@ -234,7 +236,7 @@ $window.resize(function() {
 	if (!jQuery('body').hasClass('resizing')) {
 		jQuery('body').addClass('resizing');
 		
-		if($window.width() >= 576 && $window.height() >= 600) {
+		if($window.width() >= $minwidth && $window.height() >= $minheight) {
 			deleteScroll();
 		}
 		
@@ -248,7 +250,7 @@ $window.resize(function() {
 				jQuery('body').removeClass('resizing');	
 				resetTransforms();
 
-				if($window.width() >= 576 && $window.height() >= 600) {
+				if($window.width() >= $minwidth && $window.height() >= $minheight) {
 					initHorizontalScroll();
 				} else {
 					initVerticalScroll();
@@ -258,7 +260,7 @@ $window.resize(function() {
 		
 	}
 	
-	if($window.width() >= 576 && $window.height() >= 600) {
+	if($window.width() >= $minwidth && $window.height() >= $minheight) {
 	
 		if (jQuery('body').hasClass('vert-scroll')) {
 			jQuery('body').removeClass('vert-scroll');
@@ -334,7 +336,7 @@ jQuery(document).ready(function(){
 	});	
 	
 	
-	if($window.width() >= 576 && $window.height() >= 600) {
+	if($window.width() >= $minwidth && $window.height() >= $minheight) {
 		$lazy.config('scrollDirection','horizontal');
 		$lazynofade.config('scrollDirection', 'horizontal');
 		$lazynofade.config('imageBase', 'inc/img/');

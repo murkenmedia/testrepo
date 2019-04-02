@@ -973,7 +973,7 @@
 	
 }
 
-@media (min-height: 800px) and (min-width: $sm) {
+@media (min-height: $readableheight) and (min-width: $sm) {
 	#timeline-intro {
 		.row {
 			padding: 40px;

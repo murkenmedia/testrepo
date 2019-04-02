@@ -149,7 +149,7 @@
 }
 
 
-@media (max-height: 800px), (max-width: $md) {
+@media (max-height: $readableheight), (max-width: $md) {
 	.content-wrap.bg-color-md {
 		padding: 30px 15px;
 		background-color: rgba(255,255,255,0.9);
