@@ -10,47 +10,20 @@ var $window = jQuery(window),
 	$lazynofade,
 	$lazydesktop,
 	$parallax = jQuery('#parallax'),
-	isIE = /*@cc_on!@*/false || !!document.documentMode;
-	
+	isIE = /*@cc_on!@*/false || !!document.documentMode;	
 	
 //////////////////0/////////1////////2//////3///////4///////5///////6///////7////////8///////9//////10///////11/////12
 var $sections = ['intro', '1900', '1930', '1940', '1950', '1960', '1970', '1980', '1990', '2000', '2010', 'end'];
-
 	
 //////////////////////////////INIT HORZ SCROLL
-function initVerticalScroll() {
-	
+function initVerticalScroll() {	
 	resetTransforms();
-	
-	/*$iScroll = new IScroll('#wrapper', {
-		probeType: 3,
-		scrollX: false, 
-		scrollY: true, 
-		mouseWheel: true,
-		mouseWheelSpeed:20,
-		bounce:false,
-		responsive:true,
-		//momentum:false,
-		//disableMouse: true,
-		deceleration:0.01,	
-	});
-	
-	
-		
-	$iScroll.on('scroll', function () {
-		$window.trigger('scroll');	
-		jQuery('.slide').isInViewport().addClass('in-viewport active');
-	});*/
-	
-	
-	//$window.on('scroll resize', check_if_in_view);
 }
 	
 //////////////////////////////INIT HORZ SCROLL
 function initHorizontalScroll() {
 	
 	resetTransforms();
-	//$iScroll.options.scrollX = true;
 	$iScroll = new IScroll('#wrapper', {
 		probeType: 3,
 		deceleration:0.01,
@@ -61,19 +34,7 @@ function initHorizontalScroll() {
 		bounce:false,
 		responsive:true,
 		click:true,
-		//preventDefaultException: { className: /<a.*class=.image-popup.*[\n]+.*?<\/a>/g}
-		/*click: true, 
-		zoom: true*/
-		//disablePointer: true,
-		//disableMouse: true,
-		//momentum:false,
-		//disableMouse: true,
 	});	
-	
-	/*$iScroll.on('scrollEnd', function () {		
-		jQuery('.image-popup').
-	});*/
-	
 	
 	$iScroll.on('scrollStart', function () {
 		if (!jQuery('body').hasClass('hide-mouse')) {
@@ -124,19 +85,6 @@ function deleteScroll() {
 		$parallax.stellar('destroy');
 	}
 
-	
-	/*
-	if (typeof $parallax === 'function') {
-		$parallax.data('plugin_stellar').destroy();
-		$parallax.stellar('destroy');
-	}
-		
-	if (typeof $iScroll === 'function') {
-		$iScroll.scrollTo(0, 0);
-		$iScroll.destroy();		
-	}
-	*/
-
 	resetTransforms();
 }
 	
@@ -163,9 +111,7 @@ function checkNav(num) {
 	
 function resetTransforms() {
 	jQuery('*[data-stellar-ratio]').each(function() {
-		jQuery(this).attr("style","");
-		//jQuery('*[data-stellar-ratio]').css({transform: '',left:'',top:''});
-		//jQuery('.parallax, .content-wrap, .thumb-wrap, .foreground').attr("style","");		
+		jQuery(this).attr("style","");		
 	});
 }
 
@@ -405,9 +351,6 @@ jQuery(document).ready(function(){
 				element.addClass("in-view");
 			}
 		});	
-		
-		
-		
 		
 	} else {
 		$lazy.config('scrollDirection', 'vertical');
