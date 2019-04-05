@@ -982,7 +982,22 @@
 			max-width: 875px;
 		}
 		
+	}	
+}
+
+
+/*TROUBLESOME SECTIONS*/
+@media (max-height: 700px), (max-width: $md) {
+	#timeline-1960 {
+		h2 {
+			font-size: 40px;line-height: 42px;
+		}
+		
+		
 	}
 	
 	
+	
 }
+
+
