@@ -594,7 +594,7 @@
 		
 		
 		.divider {
-			right: -70vw;
+			right: -60vw;
 			//display: none;
 		}
 		
@@ -701,7 +701,7 @@
 		}
 		
 		.divider {
-			right: -50vw;
+			right: -35vw;
 			//display: none;
 		}
 	
@@ -879,6 +879,8 @@
 		width: 65vw;
 	}*/
 	
+
+	
 	
 }
 
@@ -914,6 +916,13 @@
 		width: 400vw;
 	}
 	
+	#timeline-2010-after {
+		.divider {
+			right: -30vw;
+		}
+	
+	}
+	
 	/*#timeline-1950-before {
 		@include coverBG($attachment:scroll, $position: top right);
 		width: 85vw;
@@ -921,9 +930,9 @@
 	
 	
 }
-/*@media (min-height: $minheight) and (min-width: $superxl) {
+@media (min-height: $minheight) and (min-width: $superxl) {
 	
-	.slide.xl-150 {
+	/*.slide.xl-150 {
 		width: 150vw;
 	}
 	
@@ -947,9 +956,40 @@
 		
 	#timeline-1970 {		
 		@include coverBG($attachment:scroll, $position: left top);
+	}*/
+
+	#timeline-2010-after {
+		.divider {
+			right: -28vw;
+		}
+	
 	}
 	
-}*/
+}
+
+@media (min-height: $minheight) and (min-width: 1600px) {
+	
+	#timeline-2010-after {
+		.divider {
+			right: -28vw;
+		}
+	
+	}
+	
+}
+
+
+@media (min-height: $minheight) and (min-width: 2000px) {
+	
+	#timeline-2010-after {
+		.divider {
+			right: -24vw;
+		}
+	
+	}
+	
+}
+
 
 @media (max-height: $minheight) and (max-width: $md) {
 	
