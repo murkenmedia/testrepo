@@ -1,0 +1,671 @@
+.title {	
+	max-width: 475px;
+	width: 100%;height: auto;
+	margin: 0 auto;
+	display: block;	
+}
+
+#timeline-intro {
+	padding-top: 90px;
+}
+
+
+.mobile-400 {
+	padding-bottom: 400px;
+	background-position: center bottom;
+}
+
+.mobile-300 {
+	padding-bottom: 300px;
+	background-position: center bottom;
+		
+}
+
+
+#timeline-final {
+
+	h3 {
+		color: $darkblue;
+		text-align: center;
+		font-size: 36px;
+		line-height: 42px;
+		padding: 0;
+
+	}
+
+
+	img.nassco-logo {
+		width:100%;
+		height: auto;
+		max-width: 90%;
+		display: block;
+		margin: 10% auto;
+		text-align: center;
+	}
+
+
+}
+
+
+@media (min-height: $minheight) and (min-width: $sm) {
+
+	
+	#timeline-intro {
+		@include coverBG($attachment:scroll, $position: center right);
+		padding: 0;
+		z-index: 19;
+
+		.content-wrap {
+			padding: 0 30px;
+
+			position: relative;
+			margin: 0 auto;
+		}
+		.col-12{
+			max-width: 94vw;
+			padding: 0;
+			text-align: center;
+		}
+		.row {
+			padding: 0px 40px;
+		}
+		.title {	
+			max-width: 775px;
+		}
+			
+		
+		.divider {
+			width: 20vw;
+			right: -10vw;
+		}
+		
+		
+		
+	} 
+
+
+
+
+	#timeline-1900 {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 18;
+		
+		.foreground {
+			right: 50%;
+			top: 0;
+			bottom: 0;
+			left: auto;
+		}
+
+		h2 {
+			color: $text;
+		}
+		h3 {
+			margin-bottom:-15px;
+		}
+		p {
+			color: $text;max-width: 800px;
+		}
+
+		
+		.content-wrap.black-bg {
+			max-width: 350px;
+			margin: 0 auto;
+			bottom:0;
+			right: 0;
+			
+			p {
+				padding: 0;color: #FFF;
+
+			}
+		}
+
+		.thumb-wrap {
+			right: 0;
+			bottom: 0;
+
+			img {
+				max-width: 320px;
+
+				
+				&.tall {
+					max-width: 220px;
+				}
+			}
+		}
+
+		.cp-1 {
+			width: 50%;
+		}
+
+		.cp-2 {
+			width: 50%;
+			left:50%;
+		}
+
+	}
+
+	#timeline-1920 {
+		z-index: 0;
+		width: 0;
+
+
+	}
+
+
+
+	#timeline-1930 {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 16;
+		
+		.foreground {
+			right:auto;
+			top: 0;
+			bottom: 0;
+			left: 5%;
+		}
+		h2 {
+			color: #FFF;
+		}
+		.content-wrap {
+			right:0;
+			bottom:0;
+		}
+
+	}
+
+
+	#timeline-1940 {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 15;
+		.content-wrap {
+			right: 0;
+		}		
+		
+		.foreground {
+				left: 95%;
+				top: 0;
+				bottom: 0;
+				right: auto;
+			}
+	}
+
+
+	#timeline-1950 {
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 13;
+
+
+		.thumb-wrap {			
+			img {
+				max-width: 300px;
+			}
+		}
+
+		
+	}
+	
+	#timeline-1960 {
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 12;
+
+		.content-wrap {
+			
+			h2 {
+				max-width: 1100px;
+			}
+			
+			p {
+				max-width: 700px;
+			}
+		}
+		.thumb-wrap {
+			img {
+				max-width: 300px;
+			}
+		}	
+
+	}
+
+	
+	#timeline-1970 {
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 10;
+
+
+		.content-wrap {
+			
+			p {
+				max-width: 700px;
+			}
+			
+			h2 {
+				max-width: 840px;
+			}
+		}
+
+		
+	}
+
+	
+	#timeline-1980 {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 8;
+
+		.content-wrap {
+			
+			p {
+				max-width: 700px;
+			}
+			
+			h2 {
+				max-width: 1000px;
+			}
+		}
+		
+		.content-wrap.two-column {
+			z-index: 4;	
+			position: relative;
+						
+			p {
+				padding-left: 0;
+			}
+		}
+		.thumb-wrap {
+			
+			img {
+				max-width: 200px;
+			}
+			
+			img.long {
+				max-width: 300px;
+			}
+			
+			&.right-photos {
+				right:0;
+	
+			}
+		}
+
+	}
+	
+	
+	#timeline-1990 {
+		@include coverBG($attachment:scroll, $position: center left);
+		z-index: 7;
+
+		.content-wrap {
+		
+			p {
+				max-width: 700px;
+				padding: 0;
+			}
+			
+			h2 {
+				max-width: 840px;
+				color: $darkteal;
+			}
+			
+			h3 {
+				color: $darkgold;
+			}
+			
+			
+			&.clinton {
+				top: 15%;
+				max-width: 600px;
+				
+			}
+			
+			&.matson {
+				max-width: 600px;
+				top: 10%;
+			}
+			
+		
+			
+			&.dahl {
+				
+				right: 0;
+				max-width: 600px;				
+			}
+				
+		}
+		
+		.thumb-wrap {
+			img {
+				max-width: 200px;
+			}
+
+			img.long {
+				max-width: 240px;
+			}
+
+		}
+
+	}
+
+	
+	#timeline-2000 {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 6;		
+
+		.content-wrap {
+		
+			p {
+				max-width: 700px;
+			}
+			
+			h2 {
+				max-width: 840px;
+			}
+					
+		}
+		
+		.thumb-wrap {
+			right:0;
+			
+			img {
+				max-width: 180px;
+			}
+
+			img.long {
+				max-width: 240px;
+			}
+
+			img.short {
+				max-width: 120px;
+			}
+
+		}
+		
+		.foreground {
+			right:auto;
+			top: 0;
+			bottom: 0;
+			left: 30%;
+		}
+
+		
+	}
+	
+	
+	#timeline-2000-after {
+		@include coverBG($attachment:scroll, $position: center center);
+		z-index: 5;
+
+		.content-wrap {
+			z-index: 4;	
+			top: 10%;
+		
+			
+			p {
+				padding: 0;margin-bottom: 10px;
+			}
+		
+		}
+
+		
+	}
+	
+	#timeline-2010 {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 4;
+
+		
+		.content-wrap {
+			z-index: 4;	
+		
+			p {
+				max-width: 600px;
+				margin-bottom: 25px;
+				padding: 0;
+			}
+			
+			h2 {
+				max-width: 840px;
+			}
+		
+			
+			&.middle-text {
+				top: 10%;
+			}
+			
+			
+		}
+
+	}
+	
+	#timeline-2010-after {
+		
+		@include coverBG($attachment:scroll, $position: top center);
+		z-index: 3;
+
+		.content-wrap {
+			top: 10%;
+		}
+		
+		p {
+			padding: 0;
+		}
+		
+		.thumb-wrap {
+			img {
+				max-width: 220px;
+			}
+
+			img.long {
+				max-width: 250px;
+			}
+
+		}
+		
+
+	}
+	
+	
+	#timeline-end-before {
+		@include coverBG($attachment:scroll, $position: center bottom);
+		z-index: 2;		
+
+		
+		.thumb-wrap {
+			right: 0;
+			bottom: 0;
+			top: 10%;
+
+			img {
+				max-width: 350px;
+			}
+		}
+		
+		.content-wrap {
+			p {
+				padding-left: 0;
+				margin-bottom: 15px;
+			}
+			
+			
+			&.light-text {
+				margin-top: 20px;
+			}
+			
+		}
+		
+
+	}
+	
+	
+	
+	#timeline-end {
+		@include coverBG($attachment:scroll, $position: top left);
+		z-index: 1;
+
+		.content-wrap {
+			
+			p {
+				padding: 0;
+				max-width: 780px;
+			}
+			
+			h3 {
+				color: $darkgold;
+				padding-left:0;
+			}
+			
+			h2 {
+				padding-left: 30px;
+			}
+		}
+
+		
+	}
+	
+	#timeline-end-after {
+		@include coverBG($attachment:scroll, $position: center bottom);
+		z-index: 0;
+
+		.thumb-wrap {
+			right: 0;
+			bottom: 0;
+
+			img {
+				max-width: 320px;
+
+				
+				&.tall {
+					max-width: 220px;
+				}
+			}
+		}
+		
+	}
+	
+	#timeline-final {
+		@include coverBG($attachment:scroll, $position: center bottom);
+		z-index: 0;
+		
+		
+		width: 100vw;
+		
+		
+		
+		img.nassco-logo {
+			max-width: 70%;
+			
+		}
+		
+	}
+	
+	
+}
+
+
+@media (min-height: $minheight) and (min-width: $sm) {
+
+	.mobile-300, .mobile-400 {
+		padding-bottom: 0;
+	}
+	
+}
+
+@media (min-height: $minheight) and (min-width: $md) {
+
+	#timeline-end-before {
+		.content-wrap {
+			&.light-text {
+				margin-top: 0px;
+			}
+		}
+		
+	}
+	
+	#timeline-final {
+		h3 {
+			font-size: 46px;
+			line-height: 52px;
+		}
+			
+	}
+	#timeline-end {
+		.content-wrap {
+			
+			p {
+				padding-top: 5%;
+			}
+		}
+	}
+	
+}
+
+@media (min-height: $minheight) and (min-width: $xl) {
+
+	#timeline-end-before {
+		.divider {
+			right: -30vw;
+		}
+	
+	}
+	
+	
+	#timeline-final {
+		h3 {
+			font-size: 56px;
+			line-height: 62px;
+		}
+			
+	}
+	
+	
+}
+
+
+
+
+
+@media (max-height: $minheight) and (max-width: $md) {
+	
+	
+	#timeline-final {
+		@include coverBG($attachment:scroll, $position: center top);
+		
+		.content-wrap {
+			background-color: transparent;
+			padding: 0;
+		}
+		
+	}
+
+	
+	
+	
+}
+
+@media (min-height: $readableheight) and (min-width: $sm) {
+	#timeline-intro {
+		.row {
+			padding: 40px;
+		}
+		.title {	
+			max-width: 875px;
+		}
+		
+	}	
+}
+
+
+/*TROUBLESOME SECTIONS*/
+@media (max-height: 700px), (max-width: $md) {
+	#timeline-1960 {
+		h2 {
+			font-size: 40px;line-height: 42px;
+		}
+		
+		
+	}
+	
+	
+	
+}
+
+

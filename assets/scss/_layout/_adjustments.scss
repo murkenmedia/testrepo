@@ -1,0 +1,191 @@
+/* adjustments.scss */
+
+.content-padding {
+	height: 100%;
+	position: relative; 
+	z-index: 4;
+	box-sizing: border-box;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	height: 5px;
+	background-color: teal;
+	width: 100%;
+}
+
+@media (min-height: $minheight) and (min-width: $sm) {
+	.parallax {
+		width:4000vw;
+	}
+	.slide {
+		width: auto;
+	}
+	
+	.container-fluid {
+		width: 105vw;box-sizing: border-box;
+	}
+	
+	.container-fluid.horz-sm-50 {
+		width: 50vw;
+	}
+	
+	.container-fluid.horz-sm-70 {
+		width: 70vw;
+	}
+	
+	.container-fluid.horz-sm-90 {
+		width: 90vw;
+	}
+	
+	.container-fluid.horz-sm-100 {
+		width: 100vw;
+	}
+	
+	.container-fluid.horz-sm-110 {
+		width: 110vw;
+	}
+		
+	.container-fluid.horz-sm-150 {
+		width: 150vw;
+	}
+	
+	.container-fluid.horz-sm-180 {
+		width: 180vw;
+	}
+	
+	.container-fluid.horz-sm-200 {
+		width: 200vw;
+	}
+	
+	.container-fluid.horz-sm-250 {
+		width: 250vw;
+	}
+	
+	.container-fluid.horz-sm-300 {
+		width: 300vw;
+	}
+	
+	.container-fluid.horz-sm-350 {
+		width: 350vw;
+	}
+	
+	.container-fluid.horz-sm-400 {
+		width: 400vw;
+	}
+	
+	.container-fluid.horz-sm-450 {
+		width: 450vw;
+	}
+	
+
+	
+}
+
+
+
+
+@media (min-height: $minheight) and (min-width: $md) {
+	
+	
+	.container-fluid.horz-md-70 {
+		width: 70vw;
+	}
+	
+	.container-fluid.horz-md-80 {
+		width: 80vw;
+	}
+	
+	.container-fluid.horz-md-100 {
+		width: 100vw;
+	}
+	
+	.container-fluid.horz-md-150 {
+		width: 150vw;
+	}
+	
+	.container-fluid.horz-md-200 {
+		width: 200vw;
+	}
+	
+	.container-fluid.horz-md-250 {
+		width: 250vw;
+	}
+	
+	.container-fluid.horz-md-300 {
+		width: 300vw;
+	}
+	
+	.container-fluid.horz-md-350 {
+		width: 350vw;
+	}
+	
+	.container-fluid.horz-md-400 {
+		width: 400vw;
+	}
+	
+	.container-fluid.horz-md-450 {
+		width: 450vw;
+	}
+	
+	
+	
+}
+
+@media (min-height: $minheight) and (min-width: $lg) {
+	
+	.container-fluid.horz-lg-70 {
+		width: 70vw;
+	}	
+	
+	.container-fluid.horz-lg-90 {
+		width: 90vw;
+	}
+	
+	.container-fluid.horz-lg-100 {
+		width: 100vw;
+	}
+	
+	.container-fluid.horz-lg-150 {
+		width: 150vw;
+	}
+	
+	.container-fluid.horz-lg-200 {
+		width: 200vw;
+	}
+	
+}
+
+@media (min-height: $minheight) and (min-width: $xl) {
+
+	
+	.container-fluid.horz-xl-150 {
+		width: 150vw;
+	}
+	
+	.container-fluid.horz-xl-200 {
+		width: 200vw;
+	}
+	
+	.container-fluid.horz-xl-250 {
+		width: 250vw;
+	}
+	
+	.container-fluid.horz-xl-300 {
+		width: 300vw;
+	}
+	
+	.container-fluid.horz-xl-350 {
+		width: 350vw;
+	}
+	
+	.container-fluid.horz-xl-400 {
+		width: 400vw;
+	}
+	
+	
+	
+	
+	
+}

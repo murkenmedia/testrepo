@@ -1,0 +1,23 @@
+/*_typography.scss*/
+@font-face {
+    font-family: 'popwarner'; 
+    src: url('../fonts/popwarner-webfont.eot');
+    src: url('../fonts/popwarner-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/popwarner-webfont.woff2') format('woff2'),
+         url('../fonts/popwarner-webfont.woff') format('woff'),
+         url('../fonts/popwarner-webfont.ttf') format('truetype'),
+         url('../fonts/popwarner-webfont.svg#pop_warnerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'nassco';
+  src:  url('../fonts/nassco.eot?v=1.0.4');
+  src:  url('../fonts/nassco.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/nassco.ttf?v=1.0.4') format('truetype'),
+    url('../fonts/nassco.woff?v=1.0.4') format('woff'),
+    url('../fonts/nassco.svg#nassco') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
