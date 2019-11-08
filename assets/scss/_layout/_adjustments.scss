@@ -158,8 +158,14 @@
 }
 
 @media (min-height: $minheight) and (min-width: $xl) {
-
 	
+	.container-fluid.horz-xl-70 {
+		width: 70vw;
+	}
+	
+	.container-fluid.horz-xl-90 {
+		width: 90vw;
+	}
 	.container-fluid.horz-xl-150 {
 		width: 150vw;
 	}
